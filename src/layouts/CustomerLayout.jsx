@@ -11,15 +11,15 @@ export default function CustomerLayout() {
   const { pathname } = useLocation();
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-cream-50">
       {/* Header */}
-      <header className="bg-primary-800 text-white shadow-lg sticky top-0 z-40">
+      <header className="bg-cream-50 shadow-sm sticky top-0 z-40 border-b border-cream-200">
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
-            <span className="text-2xl">🏪</span>
+            <span className="text-2xl text-accent-500">⬡</span>
             <div>
-              <h1 className="text-lg font-bold leading-tight">SuvidhaHub</h1>
-              <p className="text-[10px] text-primary-200 leading-tight">Your Trusted Digital Seva Partner</p>
+              <h1 className="text-lg font-bold leading-tight text-primary-900">SuvidhaHub</h1>
+              <p className="text-[10px] text-primary-500 leading-tight">Your Trusted Digital Seva Partner</p>
             </div>
           </Link>
           <nav className="hidden md:flex items-center gap-6">
@@ -28,16 +28,27 @@ export default function CustomerLayout() {
                 key={item.path}
                 to={item.path}
                 className={`flex items-center gap-1.5 text-sm font-medium transition-colors ${
-                  pathname === item.path ? 'text-accent-400' : 'text-primary-100 hover:text-white'
+                  pathname === item.path ? 'text-accent-500' : 'text-primary-700 hover:text-accent-600'
                 }`}
               >
                 <item.icon className="w-4 h-4" />
                 {item.label}
               </Link>
             ))}
-            <Link to="/login" className="bg-accent-500 hover:bg-accent-600 px-4 py-1.5 rounded-sm text-sm font-semibold text-white transition-colors">
-              Admin
+            <Link
+              to="/track"
+              className="text-sm font-medium text-primary-700 hover:text-accent-600 transition-colors"
+            >
+              FAQ
             </Link>
+            <div className="flex items-center gap-3 ml-2">
+              <button className="text-primary-600 hover:text-primary-800 transition-colors" aria-label="Search">
+                <Search className="w-4 h-4" />
+              </button>
+              <Link to="/login" className="bg-accent-500 hover:bg-accent-600 px-5 py-2 rounded-full text-sm font-semibold text-white transition-colors shadow-sm">
+                Login
+              </Link>
+            </div>
           </nav>
         </div>
       </header>
@@ -48,44 +59,44 @@ export default function CustomerLayout() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-gray-400 py-8">
+      <footer className="bg-primary-900 text-primary-300 py-8">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-white font-semibold mb-3">SuvidhaHub</h3>
+              <h3 className="text-cream-100 font-semibold mb-3">SuvidhaHub</h3>
               <p className="text-sm">Your one-stop solution for all government services and digital documentation.</p>
             </div>
             <div>
-              <h3 className="text-white font-semibold mb-3">Quick Links</h3>
+              <h3 className="text-cream-100 font-semibold mb-3">Quick Links</h3>
               <div className="flex flex-col gap-2 text-sm">
-                <Link to="/services" className="hover:text-white transition-colors">All Services</Link>
-                <Link to="/track" className="hover:text-white transition-colors">Track Application</Link>
-                <Link to="/login" className="hover:text-white transition-colors">Admin Login</Link>
+                <Link to="/services" className="hover:text-accent-400 transition-colors">All Services</Link>
+                <Link to="/track" className="hover:text-accent-400 transition-colors">Track Application</Link>
+                <Link to="/login" className="hover:text-accent-400 transition-colors">Admin Login</Link>
               </div>
             </div>
             <div>
-              <h3 className="text-white font-semibold mb-3">Contact</h3>
+              <h3 className="text-cream-100 font-semibold mb-3">Contact</h3>
               <div className="flex flex-col gap-2 text-sm">
                 <span className="flex items-center gap-2"><Phone className="w-3 h-3" /> +91 98765 43210</span>
                 <span className="flex items-center gap-2"><MessageCircle className="w-3 h-3" /> WhatsApp Support</span>
               </div>
             </div>
           </div>
-          <div className="border-t border-gray-800 mt-8 pt-4 text-center text-xs">
+          <div className="border-t border-primary-700 mt-8 pt-4 text-center text-xs text-primary-400">
             © 2024 SuvidhaHub. All rights reserved.
           </div>
         </div>
       </footer>
 
       {/* Mobile Bottom Nav */}
-      <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 z-40">
+      <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-cream-50 border-t border-cream-300 z-40">
         <div className="flex justify-around py-2">
           {navItems.map((item) => (
             <Link
               key={item.path}
               to={item.path}
               className={`flex flex-col items-center gap-0.5 text-[10px] font-medium ${
-                pathname === item.path ? 'text-primary-800' : 'text-gray-400'
+                pathname === item.path ? 'text-accent-500' : 'text-primary-500'
               }`}
             >
               <item.icon className="w-5 h-5" />
