@@ -5,7 +5,7 @@ import ServiceCard from '../../components/ServiceCard';
 import StatusPill from '../../components/StatusPill';
 import { services } from '../../data/services';
 import { applications } from '../../data/applications';
-import { Phone, MessageCircle, Mail, Star, FileCheck, Clock, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Phone, MessageCircle, Mail, Star, FileCheck, Clock, ArrowRight, ChevronLeft, ChevronRight, Search, Upload, CheckCircle, Headphones } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { useState, useEffect, useCallback } from 'react';
 
@@ -170,6 +170,31 @@ export default function CustomerHome() {
         </div>
       </section>
 
+      {/* How It Works */}
+      <section className="bg-cream-50 py-12">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-2xl font-bold text-primary-900 text-center">How It Works</h2>
+          <p className="text-primary-500 text-center mt-2 mb-8">Get your documents done in 4 simple steps</p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {[
+              { icon: Search, title: 'Choose Service', desc: 'Browse 30+ government & document services' },
+              { icon: Upload, title: 'Upload Documents', desc: 'Submit required documents securely online' },
+              { icon: Clock, title: 'We Process', desc: 'Our experts handle the complete process' },
+              { icon: CheckCircle, title: 'Get Delivered', desc: 'Receive your documents at your doorstep' },
+            ].map((step, i) => (
+              <div key={i} className="text-center">
+                <div className="w-14 h-14 rounded-full bg-primary-800 text-white flex items-center justify-center mx-auto mb-3 shadow-md">
+                  <step.icon className="w-6 h-6" />
+                </div>
+                <div className="text-xs font-bold text-accent-500 mb-1">Step {i + 1}</div>
+                <h3 className="font-semibold text-primary-900 text-sm">{step.title}</h3>
+                <p className="text-xs text-primary-500 mt-1">{step.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Popular Services */}
       <section className="max-w-7xl mx-auto px-4 py-12">
         <div className="flex items-center justify-between mb-6">
@@ -180,6 +205,49 @@ export default function CustomerHome() {
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
           {popularServices.map(s => (
+            <ServiceCard key={s.id} {...s} onClick={() => navigate(`/services/${s.id}`)} />
+          ))}
+        </div>
+      </section>
+
+      {/* Browse by Category */}
+      <section className="bg-cream-50 py-12">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-2xl font-bold text-primary-900 text-center mb-2">Browse by Category</h2>
+          <p className="text-primary-500 text-center mb-8">Find the right service for your needs</p>
+          <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-7 gap-4">
+            {[
+              { name: 'Aadhaar', img: '/images/services/aadhaar-new.svg' },
+              { name: 'PAN', img: '/images/services/pan-new.svg' },
+              { name: 'License', img: '/images/services/permanent-license.svg' },
+              { name: 'Passport', img: '/images/services/passport-new.svg' },
+              { name: 'Voter ID', img: '/images/services/voter-id-new.svg' },
+              { name: 'Ration Card', img: '/images/services/ration-card-new.svg' },
+              { name: 'Certificates', img: '/images/services/income-certificate.svg' },
+            ].map((cat, i) => (
+              <Link
+                key={i}
+                to="/services"
+                className="bg-white rounded-md p-4 text-center shadow-sm border border-cream-200 hover:shadow-md hover:border-accent-300 transition-all group"
+              >
+                <img src={cat.img} alt={cat.name} className="w-12 h-12 mx-auto mb-2 object-contain" />
+                <p className="text-sm font-semibold text-primary-800 group-hover:text-accent-600 transition-colors">{cat.name}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* All Services */}
+      <section className="max-w-7xl mx-auto px-4 py-12">
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="text-2xl font-bold text-primary-900">All Services</h2>
+          <Link to="/services" className="text-sm text-accent-600 hover:text-accent-700 font-semibold flex items-center gap-1">
+            View All <ArrowRight className="w-4 h-4" />
+          </Link>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          {services.slice(0, 12).map(s => (
             <ServiceCard key={s.id} {...s} onClick={() => navigate(`/services/${s.id}`)} />
           ))}
         </div>
@@ -196,6 +264,37 @@ export default function CustomerHome() {
                 <p className="text-xs text-primary-500">{app.id} • {app.submitted_date}</p>
               </div>
               <StatusPill status={app.status} />
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="max-w-7xl mx-auto px-4 py-12">
+        <h2 className="text-2xl font-bold text-primary-900 text-center mb-2">What Our Customers Say</h2>
+        <p className="text-primary-500 text-center mb-8">Trusted by thousands across the country</p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {[
+            { name: 'Rajesh Kumar', service: 'PAN Card', text: 'Got my PAN card in just 10 days. Very professional and hassle-free service. Highly recommended!', rating: 5 },
+            { name: 'Priya Sharma', service: 'Aadhaar Update', text: 'Updated my Aadhaar address quickly. The team guided me through every step. Excellent support!', rating: 5 },
+            { name: 'Amit Verma', service: 'Driving License', text: 'Applied for my permanent license through SuvidhaHub. Smooth process and got it within a month.', rating: 4 },
+          ].map((review, i) => (
+            <div key={i} className="bg-white rounded-md p-6 shadow-sm border border-cream-200">
+              <div className="flex gap-0.5 mb-3">
+                {Array.from({ length: 5 }).map((_, j) => (
+                  <Star key={j} className={`w-4 h-4 ${j < review.rating ? 'text-yellow-400 fill-yellow-400' : 'text-cream-300'}`} />
+                ))}
+              </div>
+              <p className="text-sm text-primary-600 leading-relaxed">"{review.text}"</p>
+              <div className="mt-4 flex items-center gap-3">
+                <div className="w-9 h-9 rounded-full bg-primary-800 text-white flex items-center justify-center text-sm font-bold">
+                  {review.name.charAt(0)}
+                </div>
+                <div>
+                  <p className="font-semibold text-primary-900 text-sm">{review.name}</p>
+                  <p className="text-xs text-primary-500">{review.service}</p>
+                </div>
+              </div>
             </div>
           ))}
         </div>
