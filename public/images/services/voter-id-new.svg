@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ede7f6"/>
+      <stop offset="100%" style="stop-color:#d1c4e9"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="16" fill="url(#bg)"/>
+  <!-- Ballot box -->
+  <rect x="145" y="60" width="110" height="90" rx="8" fill="#fff" stroke="#4527a0" stroke-width="2.5"/>
+  <rect x="145" y="60" width="110" height="25" rx="8" fill="#4527a0"/>
+  <rect x="180" y="68" width="40" height="8" rx="4" fill="#b39ddb"/>
+  <!-- Ballot paper sliding in -->
+  <rect x="175" y="45" width="50" height="40" rx="3" fill="#ede7f6" stroke="#4527a0" stroke-width="1.5"/>
+  <path d="M188 55 L195 62 L208 50" fill="none" stroke="#4527a0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Voter ID card -->
+  <rect x="120" y="165" width="160" height="95" rx="10" fill="#fff" stroke="#4527a0" stroke-width="2"/>
+  <rect x="135" y="178" width="42" height="45" rx="4" fill="#ede7f6" stroke="#4527a0" stroke-width="1"/>
+  <circle cx="156" cy="193" r="10" fill="#4527a0" opacity="0.3"/>
+  <path d="M145 215 Q156 207 167 215" fill="#4527a0" opacity="0.3"/>
+  <text x="200" y="188" fill="#4527a0" font-size="9" font-weight="bold" font-family="Arial">VOTER ID CARD</text>
+  <rect x="200" y="196" width="65" height="5" rx="2.5" fill="#b39ddb"/>
+  <rect x="200" y="208" width="55" height="5" rx="2.5" fill="#d1c4e9"/>
+  <rect x="200" y="220" width="45" height="5" rx="2.5" fill="#d1c4e9"/>
+  <text x="200" y="285" text-anchor="middle" fill="#4527a0" font-size="18" font-weight="bold" font-family="Arial, sans-serif">Voter ID Card</text>
+</svg>

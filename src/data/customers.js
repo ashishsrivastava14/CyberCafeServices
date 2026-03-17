@@ -1,0 +1,17 @@
+export const customers = [
+  { id: 1, name: 'Rajesh Kumar', phone: '9876543210', email: 'rajesh@email.com', city: 'Jaipur', aadhaar_last4: '4521', joined: '2024-01-15', total_applications: 12, total_spent: 3500, status: 'Active' },
+  { id: 2, name: 'Priya Sharma', phone: '9876543211', email: 'priya@email.com', city: 'Delhi', aadhaar_last4: '7832', joined: '2024-02-20', total_applications: 8, total_spent: 2200, status: 'Active' },
+  { id: 3, name: 'Amit Patel', phone: '9876543212', email: 'amit@email.com', city: 'Ahmedabad', aadhaar_last4: '1234', joined: '2024-03-10', total_applications: 5, total_spent: 1500, status: 'Active' },
+  { id: 4, name: 'Sunita Devi', phone: '9876543213', email: 'sunita@email.com', city: 'Jaipur', aadhaar_last4: '5678', joined: '2024-03-25', total_applications: 15, total_spent: 4200, status: 'Active' },
+  { id: 5, name: 'Mohammed Ali', phone: '9876543214', email: 'ali@email.com', city: 'Lucknow', aadhaar_last4: '9012', joined: '2024-04-05', total_applications: 3, total_spent: 800, status: 'Active' },
+  { id: 6, name: 'Kavita Singh', phone: '9876543215', email: 'kavita@email.com', city: 'Bhopal', aadhaar_last4: '3456', joined: '2024-04-18', total_applications: 7, total_spent: 1900, status: 'Active' },
+  { id: 7, name: 'Ravi Verma', phone: '9876543216', email: 'ravi@email.com', city: 'Patna', aadhaar_last4: '7890', joined: '2024-05-01', total_applications: 2, total_spent: 400, status: 'Inactive' },
+  { id: 8, name: 'Anita Kumari', phone: '9876543217', email: 'anita@email.com', city: 'Jaipur', aadhaar_last4: '2345', joined: '2024-05-15', total_applications: 10, total_spent: 2800, status: 'Active' },
+  { id: 9, name: 'Suresh Yadav', phone: '9876543218', email: 'suresh@email.com', city: 'Delhi', aadhaar_last4: '6789', joined: '2024-06-02', total_applications: 6, total_spent: 1600, status: 'Active' },
+  { id: 10, name: 'Deepa Gupta', phone: '9876543219', email: 'deepa@email.com', city: 'Mumbai', aadhaar_last4: '0123', joined: '2024-06-20', total_applications: 4, total_spent: 1100, status: 'Active' },
+  { id: 11, name: 'Vikram Chauhan', phone: '9876543220', email: 'vikram@email.com', city: 'Jodhpur', aadhaar_last4: '4567', joined: '2024-07-08', total_applications: 9, total_spent: 2500, status: 'Active' },
+  { id: 12, name: 'Meena Rawat', phone: '9876543221', email: 'meena@email.com', city: 'Udaipur', aadhaar_last4: '8901', joined: '2024-07-22', total_applications: 1, total_spent: 150, status: 'Inactive' },
+  { id: 13, name: 'Dinesh Joshi', phone: '9876543222', email: 'dinesh@email.com', city: 'Jaipur', aadhaar_last4: '2346', joined: '2024-08-05', total_applications: 11, total_spent: 3100, status: 'Active' },
+  { id: 14, name: 'Pooja Mehra', phone: '9876543223', email: 'pooja@email.com', city: 'Delhi', aadhaar_last4: '6780', joined: '2024-08-18', total_applications: 6, total_spent: 1700, status: 'Active' },
+  { id: 15, name: 'Ramesh Bishnoi', phone: '9876543224', email: 'ramesh@email.com', city: 'Bikaner', aadhaar_last4: '1235', joined: '2024-09-01', total_applications: 4, total_spent: 950, status: 'Active' },
+];

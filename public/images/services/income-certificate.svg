@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e0f7fa"/>
+      <stop offset="100%" style="stop-color:#b2ebf2"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="16" fill="url(#bg)"/>
+  <!-- Certificate -->
+  <rect x="100" y="40" width="200" height="160" rx="10" fill="#fff" stroke="#00695c" stroke-width="2.5"/>
+  <!-- Border design -->
+  <rect x="110" y="50" width="180" height="140" rx="6" fill="none" stroke="#00695c" stroke-width="0.5" stroke-dasharray="4 2"/>
+  <!-- Content -->
+  <text x="200" y="75" text-anchor="middle" fill="#00695c" font-size="11" font-weight="bold" font-family="Arial">GOVERNMENT OF INDIA</text>
+  <text x="200" y="95" text-anchor="middle" fill="#00695c" font-size="14" font-weight="bold" font-family="Arial">INCOME CERTIFICATE</text>
+  <line x1="140" y1="100" x2="260" y2="100" stroke="#00695c" stroke-width="1"/>
+  <rect x="130" y="112" width="140" height="5" rx="2.5" fill="#80cbc4"/>
+  <rect x="130" y="124" width="120" height="5" rx="2.5" fill="#b2dfdb"/>
+  <rect x="130" y="136" width="130" height="5" rx="2.5" fill="#b2dfdb"/>
+  <rect x="130" y="148" width="100" height="5" rx="2.5" fill="#b2dfdb"/>
+  <!-- Seal -->
+  <circle cx="240" y="165" r="12" fill="none" stroke="#00695c" stroke-width="1.5" cx="240" cy="165"/>
+  <text x="240" y="169" text-anchor="middle" fill="#00695c" font-size="8" font-weight="bold">SEAL</text>
+  <!-- Rupee icon -->
+  <g transform="translate(200, 240)">
+    <circle cx="0" cy="0" r="20" fill="#00695c" opacity="0.15"/>
+    <text x="0" y="8" text-anchor="middle" fill="#00695c" font-size="22" font-weight="bold" font-family="Arial">₹</text>
+  </g>
+  <text x="200" y="285" text-anchor="middle" fill="#00695c" font-size="16" font-weight="bold" font-family="Arial, sans-serif">Income Certificate</text>
+</svg>

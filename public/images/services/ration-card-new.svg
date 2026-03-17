@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff8e1"/>
+      <stop offset="100%" style="stop-color:#ffecb3"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="16" fill="url(#bg)"/>
+  <!-- Ration card -->
+  <rect x="100" y="45" width="200" height="130" rx="10" fill="#fff" stroke="#f57f17" stroke-width="2.5"/>
+  <text x="200" y="70" text-anchor="middle" fill="#f57f17" font-size="12" font-weight="bold" font-family="Arial">RATION CARD</text>
+  <text x="200" y="85" text-anchor="middle" fill="#f9a825" font-size="9" font-family="Arial">Public Distribution System</text>
+  <rect x="120" y="95" width="160" height="6" rx="3" fill="#ffe082"/>
+  <rect x="120" y="110" width="130" height="6" rx="3" fill="#ffecb3"/>
+  <rect x="120" y="125" width="140" height="6" rx="3" fill="#ffecb3"/>
+  <rect x="120" y="140" width="100" height="6" rx="3" fill="#ffecb3"/>
+  <!-- Grain/wheat icons -->
+  <g transform="translate(150, 220)">
+    <ellipse cx="0" cy="0" rx="8" ry="14" fill="#f57f17" opacity="0.3" transform="rotate(-15)"/>
+    <ellipse cx="18" cy="-5" rx="8" ry="14" fill="#f57f17" opacity="0.4" transform="rotate(5)"/>
+    <ellipse cx="36" cy="0" rx="8" ry="14" fill="#f57f17" opacity="0.3" transform="rotate(15)"/>
+  </g>
+  <!-- Rice bowl -->
+  <g transform="translate(265, 215)">
+    <path d="M-25 5 Q-25-15 0-15 Q25-15 25 5 Z" fill="#f57f17" opacity="0.2"/>
+    <path d="M-25 5 Q-20 20 0 22 Q20 20 25 5" fill="#f57f17" opacity="0.3"/>
+    <circle cx="-5" cy="-5" r="3" fill="#fff" opacity="0.5"/>
+    <circle cx="5" cy="-8" r="2.5" fill="#fff" opacity="0.5"/>
+    <circle cx="-10" cy="-2" r="2" fill="#fff" opacity="0.5"/>
+  </g>
+  <text x="200" y="270" text-anchor="middle" fill="#f57f17" font-size="18" font-weight="bold" font-family="Arial, sans-serif">Ration Card</text>
+</svg>

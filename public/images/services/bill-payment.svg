@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fffde7"/>
+      <stop offset="100%" style="stop-color:#fff9c4"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="16" fill="url(#bg)"/>
+  <!-- Lightning bolt -->
+  <g transform="translate(200, 115)">
+    <polygon points="-8,-55 15,-8 2,-8 12,55 -15,5 0,5" fill="#f9a825" stroke="#f57f17" stroke-width="2" stroke-linejoin="round"/>
+  </g>
+  <!-- Bill/receipt -->
+  <rect x="140" y="185" width="120" height="70" rx="6" fill="#fff" stroke="#f57f17" stroke-width="2"/>
+  <rect x="155" y="200" width="70" height="5" rx="2.5" fill="#ffe082"/>
+  <rect x="155" y="212" width="90" height="5" rx="2.5" fill="#fff9c4"/>
+  <rect x="155" y="224" width="50" height="5" rx="2.5" fill="#fff9c4"/>
+  <text x="240" y="240" text-anchor="middle" fill="#f57f17" font-size="14" font-weight="bold" font-family="Arial">₹</text>
+  <text x="200" y="280" text-anchor="middle" fill="#f57f17" font-size="18" font-weight="bold" font-family="Arial, sans-serif">Bill Payment</text>
+</svg>

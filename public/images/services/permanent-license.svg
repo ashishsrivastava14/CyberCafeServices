@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e0f2f1"/>
+      <stop offset="100%" style="stop-color:#b2dfdb"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="16" fill="url(#bg)"/>
+  <!-- License card -->
+  <rect x="80" y="55" width="240" height="145" rx="12" fill="#fff" stroke="#004d40" stroke-width="2.5"/>
+  <!-- Photo area -->
+  <rect x="95" y="70" width="55" height="60" rx="6" fill="#e0f2f1" stroke="#004d40" stroke-width="1.5"/>
+  <circle cx="122" cy="88" r="13" fill="#004d40" opacity="0.3"/>
+  <path d="M108 120 Q122 108 137 120" fill="#004d40" opacity="0.3"/>
+  <!-- License details -->
+  <text x="168" y="82" fill="#004d40" font-size="10" font-weight="bold" font-family="Arial">DRIVING LICENSE</text>
+  <rect x="168" y="90" width="135" height="6" rx="3" fill="#80cbc4"/>
+  <rect x="168" y="104" width="110" height="6" rx="3" fill="#b2dfdb"/>
+  <rect x="168" y="118" width="120" height="6" rx="3" fill="#b2dfdb"/>
+  <!-- Vehicle categories -->
+  <g transform="translate(168, 140)">
+    <rect x="0" y="0" width="28" height="16" rx="3" fill="#004d40"/>
+    <text x="14" y="12" text-anchor="middle" fill="#fff" font-size="8" font-weight="bold">LMV</text>
+    <rect x="35" y="0" width="28" height="16" rx="3" fill="#004d40" opacity="0.7"/>
+    <text x="49" y="12" text-anchor="middle" fill="#fff" font-size="8" font-weight="bold">MCWG</text>
+  </g>
+  <!-- Car silhouette -->
+  <g transform="translate(200, 240)">
+    <path d="M-40 0 L-35-15 L-15-25 L15-25 L30-15 L40 0 Z" fill="#004d40" opacity="0.2"/>
+    <rect x="-42" y="0" width="84" height="12" rx="4" fill="#004d40" opacity="0.3"/>
+    <circle cx="-25" cy="12" r="8" fill="#004d40" opacity="0.4"/>
+    <circle cx="25" cy="12" r="8" fill="#004d40" opacity="0.4"/>
+  </g>
+  <text x="200" y="285" text-anchor="middle" fill="#004d40" font-size="16" font-weight="bold" font-family="Arial, sans-serif">Permanent License</text>
+</svg>

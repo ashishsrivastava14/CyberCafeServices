@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8eaf6"/>
+      <stop offset="100%" style="stop-color:#c5cae9"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="16" fill="url(#bg)"/>
+  <!-- Book/Education -->
+  <g transform="translate(200, 100)">
+    <!-- Open book -->
+    <path d="M-60 30 L-60-20 Q-30-35 0-20 Q30-35 60-20 L60 30 Q30 15 0 30 Q-30 15 -60 30 Z" fill="#fff" stroke="#283593" stroke-width="2"/>
+    <path d="M0-20 L0 30" stroke="#283593" stroke-width="1.5"/>
+    <!-- Lines on pages -->
+    <line x1="-45" y1="-8" x2="-10" y2="-14" stroke="#9fa8da" stroke-width="1.5"/>
+    <line x1="-45" y1="2" x2="-10" y2="-4" stroke="#c5cae9" stroke-width="1.5"/>
+    <line x1="-45" y1="12" x2="-10" y2="6" stroke="#c5cae9" stroke-width="1.5"/>
+    <line x1="10" y1="-14" x2="45" y2="-8" stroke="#9fa8da" stroke-width="1.5"/>
+    <line x1="10" y1="-4" x2="45" y2="2" stroke="#c5cae9" stroke-width="1.5"/>
+    <line x1="10" y1="6" x2="45" y2="12" stroke="#c5cae9" stroke-width="1.5"/>
+  </g>
+  <!-- Graduation cap -->
+  <g transform="translate(200, 55)">
+    <polygon points="0,-15 -35,0 0,12 35,0" fill="#283593"/>
+    <line x1="0" y1="12" x2="0" y2="28" stroke="#283593" stroke-width="2"/>
+    <path d="M-12 20 Q0 30 12 20" fill="none" stroke="#283593" stroke-width="2"/>
+    <line x1="30" y1="0" x2="30" y2="22" stroke="#283593" stroke-width="2"/>
+    <circle cx="30" cy="24" r="3" fill="#283593"/>
+  </g>
+  <!-- Certificate -->
+  <rect x="140" y="175" width="120" height="70" rx="8" fill="#fff" stroke="#283593" stroke-width="2"/>
+  <text x="200" y="195" text-anchor="middle" fill="#283593" font-size="9" font-weight="bold" font-family="Arial">TEC CERTIFICATE</text>
+  <rect x="155" y="205" width="90" height="4" rx="2" fill="#7986cb"/>
+  <rect x="155" y="215" width="70" height="4" rx="2" fill="#c5cae9"/>
+  <rect x="155" y="225" width="80" height="4" rx="2" fill="#c5cae9"/>
+  <text x="200" y="275" text-anchor="middle" fill="#283593" font-size="18" font-weight="bold" font-family="Arial, sans-serif">TEC Registration</text>
+</svg>
