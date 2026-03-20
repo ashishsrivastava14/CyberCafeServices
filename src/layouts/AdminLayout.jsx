@@ -13,7 +13,7 @@ const sidebarItems = [
   { path: '/admin/services', label: 'Services', icon: Grid3X3 },
   { path: '/admin/payments', label: 'Payments', icon: CreditCard },
   { path: '/admin/reports', label: 'Reports', icon: BarChart3 },
-  { path: '/admin/vendors', label: 'Vendors', icon: Store },
+  { path: '/admin/vendors', label: 'Retailers', icon: Store },
   { path: '/admin/vendor-wallet', label: 'Wallet', icon: Wallet },
   { path: '/admin/notifications', label: 'Notifications', icon: Bell },
 ];

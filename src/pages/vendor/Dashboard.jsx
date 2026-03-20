@@ -38,7 +38,7 @@ export default function VendorDashboard() {
     <div className="space-y-6">
       {/* Welcome */}
       <div className="bg-gradient-to-r from-primary-800 to-primary-900 rounded-lg p-6 text-white">
-        <h1 className="text-xl font-bold">Welcome, {vendor?.name || 'Vendor'}!</h1>
+        <h1 className="text-xl font-bold">Welcome, {vendor?.name || 'Retailer'}!</h1>
         <p className="text-primary-200 text-sm mt-1">{vendor?.city} &bull; Commission Rate: {vendor?.commission_rate}%</p>
       </div>
 

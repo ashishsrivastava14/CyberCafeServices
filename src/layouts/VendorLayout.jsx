@@ -36,7 +36,7 @@ export default function VendorLayout() {
             <span className="text-2xl">🏪</span>
             <div>
               <h1 className="text-sm font-bold leading-tight">SuvidhaHub</h1>
-              <p className="text-[10px] text-primary-300">Vendor Portal</p>
+              <p className="text-[10px] text-primary-300">Retailer Portal</p>
             </div>
           </Link>
         </div>
@@ -79,7 +79,7 @@ export default function VendorLayout() {
           <div className="absolute inset-0 bg-black/50" onClick={() => setSidebarOpen(false)} />
           <aside className="absolute left-0 top-0 bottom-0 w-64 bg-primary-800 text-white flex flex-col">
             <div className="p-4 border-b border-primary-700 flex items-center justify-between">
-              <span className="text-sm font-bold">Vendor Portal</span>
+              <span className="text-sm font-bold">Retailer Portal</span>
               <button onClick={() => setSidebarOpen(false)}><X className="w-5 h-5" /></button>
             </div>
             <nav className="flex-1 py-4">
@@ -117,7 +117,7 @@ export default function VendorLayout() {
                 <Menu className="w-5 h-5" />
               </button>
               <h2 className="text-lg font-semibold text-gray-800">
-                {sidebarItems.find((i) => pathname.startsWith(i.path))?.label || 'Vendor'}
+                {sidebarItems.find((i) => pathname.startsWith(i.path))?.label || 'Retailer'}
               </h2>
             </div>
             <div className="flex items-center gap-3">

@@ -60,7 +60,7 @@ export default function CustomerHome() {
   return (
     <div>
       {/* Hero Slider */}
-      <section className="relative h-[500px] md:h-[560px] overflow-hidden">
+      <section className="relative h-[500px] md:h-[560px]">
         {heroSlides.map((slide, i) => (
           <div
             key={i}
@@ -114,7 +114,7 @@ export default function CustomerHome() {
         </button>
 
         {/* Slide Indicators */}
-        <div className="absolute bottom-24 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2">
           {heroSlides.map((_, i) => (
             <button
               key={i}
@@ -125,35 +125,36 @@ export default function CustomerHome() {
           ))}
         </div>
 
-        {/* Search/Service Bar - Inspired by the image */}
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-20 w-full max-w-4xl px-4 translate-y-1/2">
-          <div className="bg-white rounded-md shadow-xl border border-cream-200 flex flex-col md:flex-row items-stretch divide-y md:divide-y-0 md:divide-x divide-cream-200">
-            <div className="flex-1 px-6 py-4">
-              <p className="text-xs font-bold text-primary-700 uppercase tracking-wide">Service</p>
-              <p className="text-sm text-primary-500 mt-1">Aadhaar, PAN, License...</p>
-            </div>
-            <div className="flex-1 px-6 py-4">
-              <p className="text-xs font-bold text-primary-700 uppercase tracking-wide">Category</p>
-              <p className="text-sm text-primary-500 mt-1">{serviceCategories.join(', ')}</p>
-            </div>
-            <div className="flex-1 px-6 py-4">
-              <p className="text-xs font-bold text-primary-700 uppercase tracking-wide">Documents</p>
-              <p className="text-sm text-primary-500 mt-1">30+ services available</p>
-            </div>
-            <div className="px-6 py-4 flex items-center">
-              <Link
-                to="/services"
-                className="bg-primary-800 hover:bg-primary-900 text-white px-8 py-3 rounded-full font-semibold text-sm transition-colors whitespace-nowrap"
-              >
-                Search
-              </Link>
-            </div>
-          </div>
-        </div>
       </section>
 
+      {/* Search/Service Bar */}
+      <div className="relative z-20 -mt-10 max-w-4xl mx-auto px-4">
+        <div className="bg-white rounded-md shadow-xl border border-cream-200 flex flex-col md:flex-row items-stretch divide-y md:divide-y-0 md:divide-x divide-cream-200">
+          <div className="flex-1 px-6 py-4">
+            <p className="text-xs font-bold text-primary-700 uppercase tracking-wide">Service</p>
+            <p className="text-sm text-primary-500 mt-1">Aadhaar, PAN, License...</p>
+          </div>
+          <div className="flex-1 px-6 py-4">
+            <p className="text-xs font-bold text-primary-700 uppercase tracking-wide">Category</p>
+            <p className="text-sm text-primary-500 mt-1">{serviceCategories.join(', ')}</p>
+          </div>
+          <div className="flex-1 px-6 py-4">
+            <p className="text-xs font-bold text-primary-700 uppercase tracking-wide">Documents</p>
+            <p className="text-sm text-primary-500 mt-1">30+ services available</p>
+          </div>
+          <div className="px-6 py-4 flex items-center">
+            <Link
+              to="/services"
+              className="bg-primary-800 hover:bg-primary-900 text-white px-8 py-3 rounded-full font-semibold text-sm transition-colors whitespace-nowrap"
+            >
+              Search
+            </Link>
+          </div>
+        </div>
+      </div>
+
       {/* Stats */}
-      <section className="max-w-7xl mx-auto px-4 mt-16 md:mt-14">
+      <section className="max-w-7xl mx-auto px-4 mt-8 md:mt-10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
             { label: 'Total Services', value: '30+', icon: '🏪' },

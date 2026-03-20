@@ -48,17 +48,17 @@ export default function Vendors() {
         status: 'Active',
       };
       setData([...data, newVendor]);
-      toast.success('Vendor added');
+      toast.success('Retailer added');
     } else {
       setData(data.map(d => d.id === editItem.id ? { ...d, ...form, commission_rate: Number(form.commission_rate) } : d));
-      toast.success('Vendor updated');
+      toast.success('Retailer updated');
     }
     setModal(null);
   };
 
   const toggleSuspend = (id) => {
     setData(data.map(d => d.id === id ? { ...d, status: d.status === 'Active' ? 'Suspended' : 'Active' } : d));
-    toast.success('Vendor status updated');
+    toast.success('Retailer status updated');
   };
 
   if (loading) return <PageSkeleton />;
@@ -73,9 +73,9 @@ export default function Vendors() {
       </div>
 
       <div className="flex justify-between items-center">
-        <p className="text-sm text-gray-500">{data.length} vendors</p>
+        <p className="text-sm text-gray-500">{data.length} retailers</p>
         <button onClick={openAdd} className="flex items-center gap-2 bg-primary-800 text-white px-4 py-2 rounded-sm text-sm font-medium hover:bg-primary-900">
-          <Plus className="w-4 h-4" /> Add Vendor
+          <Plus className="w-4 h-4" /> Add Retailer
         </button>
       </div>
 
@@ -107,7 +107,7 @@ export default function Vendors() {
 
       {/* Add/Edit Modal */}
       {modal && (
-        <Modal title={modal === 'add' ? 'Add Vendor' : 'Edit Vendor'} onClose={() => setModal(null)}>
+        <Modal title={modal === 'add' ? 'Add Retailer' : 'Edit Retailer'} onClose={() => setModal(null)}>
           <div className="space-y-4">
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">Name *</label>
@@ -135,7 +135,7 @@ export default function Vendors() {
 
       {/* View Modal */}
       {viewItem && (
-        <Modal title="Vendor Details" onClose={() => setViewItem(null)}>
+        <Modal title="Retailer Details" onClose={() => setViewItem(null)}>
           <div className="space-y-3 text-sm">
             <div className="grid grid-cols-2 gap-3">
               <div><span className="text-gray-500">Name:</span> <p className="font-medium">{viewItem.name}</p></div>

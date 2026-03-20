@@ -27,7 +27,7 @@ export default function Login() {
       toast.success('Welcome back, Admin!');
       navigate('/admin/dashboard');
     } else if (result === 'vendor') {
-      toast.success('Welcome to Vendor Portal!');
+      toast.success('Welcome to Retailer Portal!');
       navigate('/vendor/dashboard');
     } else if (result === 'suspended') {
       toast.error('Your account has been suspended. Contact admin.');
@@ -61,7 +61,7 @@ export default function Login() {
             onClick={() => { setLoginType('vendor'); setEmail(''); setPassword(''); setErrors({}); }}
             className={`flex-1 flex items-center justify-center gap-2 py-2 rounded-sm text-sm font-medium transition-colors ${loginType === 'vendor' ? 'bg-primary-800 text-white shadow-sm' : 'text-gray-600 hover:text-gray-800'}`}
           >
-            <Store className="w-4 h-4" /> Vendor
+            <Store className="w-4 h-4" /> Retailer
           </button>
         </div>
 

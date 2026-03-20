@@ -136,7 +136,7 @@ export default function VendorWallet() {
   ];
 
   const walletColumns = [
-    { key: 'vendor_name', label: 'Vendor' },
+    { key: 'vendor_name', label: 'Retailer' },
     {
       key: 'balance', label: 'Balance', render: (r) => (
         <span className="font-semibold text-primary-800">₹{r.balance.toLocaleString()}</span>
@@ -280,7 +280,7 @@ export default function VendorWallet() {
         <>
           {/* All Wallets Table */}
           <div className="flex items-center justify-between">
-            <p className="text-sm text-gray-500">{walletData.length} vendor wallets</p>
+            <p className="text-sm text-gray-500">{walletData.length} retailer wallets</p>
           </div>
           <DataTable columns={walletColumns} rows={walletData} pageSize={10} />
         </>
@@ -351,7 +351,7 @@ export default function VendorWallet() {
         <Modal title="Initiate Payout" onClose={() => setPayoutModal(null)} size="sm">
           <div className="space-y-4">
             <div className="bg-gray-50 rounded-md p-4">
-              <p className="text-sm text-gray-500">Vendor</p>
+              <p className="text-sm text-gray-500">Retailer</p>
               <p className="font-semibold">{payoutModal.vendor_name}</p>
               <div className="flex items-center justify-between mt-2">
                 <span className="text-sm text-gray-500">Available Balance</span>

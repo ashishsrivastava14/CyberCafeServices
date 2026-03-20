@@ -16,7 +16,7 @@ export const notifications = [
   { id: 4, type: 'system', icon: '⚙️', title: 'System Update', message: 'New service category "JanAadhar" has been added to the portal', timestamp: '2024-10-17T14:00:00', read: true },
   { id: 5, type: 'payment', icon: '💰', title: 'Payment Received', message: 'Payment of ₹100 received from Anita Kumari via UPI for APP018', timestamp: '2024-10-18T11:45:00', read: false },
   { id: 6, type: 'application', icon: '✅', title: 'Application Completed', message: 'PAN Correction for Anita Kumari (APP018) has been completed', timestamp: '2024-10-18T16:20:00', read: true },
-  { id: 7, type: 'vendor', icon: '🏪', title: 'New Vendor Joined', message: 'Mehra Net Café from Udaipur has joined as a new vendor', timestamp: '2024-10-19T08:00:00', read: true },
+  { id: 7, type: 'vendor', icon: '🏪', title: 'New Retailer Joined', message: 'Mehra Net Café from Udaipur has joined as a new retailer', timestamp: '2024-10-19T08:00:00', read: true },
   { id: 8, type: 'application', icon: '📋', title: 'New Application Received', message: 'Kavita Singh submitted a Domicile Certificate application (APP019)', timestamp: '2024-10-19T10:30:00', read: false },
   { id: 9, type: 'payment', icon: '💰', title: 'Payment Received', message: 'Payment of ₹200 received from Suresh Yadav via Online for APP020', timestamp: '2024-10-20T13:15:00', read: false },
   { id: 10, type: 'system', icon: '🔔', title: 'Reminder', message: '5 applications are pending review. Please check the applications queue.', timestamp: '2024-10-20T17:00:00', read: false },
